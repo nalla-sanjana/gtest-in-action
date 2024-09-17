@@ -51,7 +51,7 @@ TEST(StringCalculatorTestSuite,add_NegativeInput_Invalid_argumentIsExpected){
   //Arrange
   string input= "-1";
   //Act
-  int actualValue=Add(input);
+  
   //Assert
   ASSERT_THROW(Add(input), invalid_argument);
  }
