@@ -54,7 +54,7 @@ TEST(StringCalculatorTestSuite,add_Negative_ExceptionIsExpected){
   //Act
   int actualValue=Add(input);
   //Assert
-  ASSERT_THROW(actualValue, expectedValue);
+  ASSERT_THROW(actualValue, invalid_argument);
  }
 
 
