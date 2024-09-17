@@ -86,6 +86,18 @@ TEST(StringCalculatorTestSuite,add_when_passed_multicharacter_delimiter_SumIsExp
   ASSERT_EQ(actualValue,expectedValue);
 }
 
+TEST(StringCalculatorTestSuite,add_when_passed_multiple_delimiters_SumIsExpected){
+  //Arrange
+  string input= "//[*][%]\n4*2%3";
+  int expectedValue=9;
+  //Act
+  int actualValue=Add(input);
+  //Assert
+  ASSERT_EQ(actualValue,expectedValue);
+}
+
+
+
 
 
 
