@@ -24,6 +24,16 @@ TEST(StringCalculatorTestSuite,add_ZeroInputString_ZeroIsExpected){
 }
 
 
+ TEST(StringCalculatorTestSuite,add_Negative_ZeroIsExpected){
+  //Arrange
+  string input= "-1";
+  string expectedValue="Negative values are not allowed";
+  //Act
+  int actualValue=Add(input);
+  //Assert
+  ASSERT_STREQ(actualValue, expectedValue);
+ }
+
 
 
 
