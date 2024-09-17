@@ -7,7 +7,8 @@ public:
 string input;
 int expectedValue;
 TestDataPair(string _input, int _expectedValue) : input{_input}, expectedValue{_expectedValue}{
-}
+  }
+};
 
 
 TEST(StringCalculatorDataDrivenTestSuite, DataDrivenTestCase){
