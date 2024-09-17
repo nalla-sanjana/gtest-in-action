@@ -1,4 +1,4 @@
-#include "StringCalculator.h"
+t#include "StringCalculator.h"
 #include <gtest/gtest.h>
 #include <vector>
 
@@ -25,7 +25,7 @@ protected:
   }
   // After Each Test Case
 void TearDown(){
-    
+    delete TestDataPair    
     
 };
 
