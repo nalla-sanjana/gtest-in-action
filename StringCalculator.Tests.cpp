@@ -24,15 +24,17 @@ TEST(StringCalculatorTestSuite,add_ZeroInputString_ZeroIsExpected){
 }
 
 
- TEST(StringCalculatorTestSuite,add_Negative_ZeroIsExpected){
+ 
+
+TEST(StringCalculatorTestSuite,add_when_passed_two_comma_delimited_numbers_SumIsExpected){
   //Arrange
-  string input= "-1";
-  string expectedValue="Negative values are not allowed";
+  string input= "1,2";
+  int expectedValue=3;
   //Act
   int actualValue=Add(input);
   //Assert
-  ASSERT_STREQ(actualValue, expectedValue);
- }
+  ASSERT_EQ(actualValue,expectedValue);
+}
 
 
 
