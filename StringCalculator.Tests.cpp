@@ -66,6 +66,16 @@ TEST(StringCalculatorTestSuite,add_when_passed_numbers_over_1000_Ignorethem){
   ASSERT_EQ(actualValue,expectedValue);
 }
 
+TEST(StringCalculatorTestSuite,add_when_passed_a_delimiter_SumIsExpected){
+  //Arrange
+  string input= "//;\n1;2";
+  int expectedValue=3;
+  //Act
+  int actualValue=Add(input);
+  //Assert
+  ASSERT_EQ(actualValue,expectedValue);
+}
+
 
 
 
