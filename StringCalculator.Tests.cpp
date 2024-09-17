@@ -37,6 +37,17 @@ TEST(StringCalculatorTestSuite,add_when_passed_two_comma_delimited_numbers_SumIs
 }
 
 
+TEST(StringCalculatorTestSuite,add_when_passed_multiple_comma_delimited_numbers_SumIsExpected){
+  //Arrange
+  string input= "1,2,3";
+  int expectedValue=6;
+  //Act
+  int actualValue=Add(input);
+  //Assert
+  ASSERT_EQ(actualValue,expectedValue);
+}
+
+
 
 
 
