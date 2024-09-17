@@ -27,7 +27,7 @@ protected:
 void TearDown(){
     delete TestDataPair    
     
-};
+}
 
 TEST_F(StringCalculatorDataDrivenFixture,DataDrivenTestCase){
      for (TestDataPair* dataPairPtr : dataList) {
