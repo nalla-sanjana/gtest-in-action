@@ -47,10 +47,9 @@ TEST(StringCalculatorTestSuite,add_when_passed_multiple_comma_delimited_numbers_
   ASSERT_EQ(actualValue,expectedValue);
 }
 
-TEST(StringCalculatorTestSuite,add_Negative_ExceptionIsExpected){
+TEST(StringCalculatorTestSuite,add_NegativeInput_Invalid_argumentIsExpected){
   //Arrange
   string input= "-1";
-  string expectedValue="Negative values are not allowed";
   //Act
   int actualValue=Add(input);
   //Assert
