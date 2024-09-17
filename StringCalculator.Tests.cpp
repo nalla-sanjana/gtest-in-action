@@ -18,12 +18,12 @@ TEST(StringCalculatorTestSuite,add_emptyInputString_ZeroIsExpected){
 
 TEST(StringCalculatorTestSuite,add_Negative_ZeroIsExpected){
   //Arrange
-  string input= -1;
+  string input= "-1";
   int expectedValue=0;
   //Act
   int actualValue=Add(input);
   //Assert
-  ASSERT_GT(expectedValue, actualValue);
+  ASSERT_GT(expectedValue,actualValue);
   
   
 }
