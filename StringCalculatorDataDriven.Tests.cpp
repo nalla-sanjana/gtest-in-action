@@ -23,7 +23,7 @@ protected:
       dataList.push_back(new TestDataPair { "1,2",3});
       dataList.push_back(new TestDataPair { "1,2,3",6});
   }
- 
+};
 
 TEST_F(StringCalculatorDataDrivenFixture,DataDrivenTestCase){
      for (TestDataPair* dataPairPtr : dataList) {
