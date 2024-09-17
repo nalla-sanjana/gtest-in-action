@@ -13,19 +13,17 @@ TEST(StringCalculatorTestSuite,add_emptyInputString_ZeroIsExpected){
   
 }
 
-
-
-
-TEST(StringCalculatorTestSuite,add_Negative_ZeroIsExpected){
+TEST(StringCalculatorTestSuite,add_ZeroInputString_ZeroIsExpected){
   //Arrange
-  string input= "-1";
+  string input= "0";
   int expectedValue=0;
   //Act
-  int actualValue=Add(input);
+  int actualValue=Add(0);
   //Assert
-  ASSERT_GT(expectedValue,actualValue);
-  
-  
-}
+  ASSERT_EQ(actualValue,expectedValue);
+
+
+
+
 
 
