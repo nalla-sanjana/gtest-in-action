@@ -23,11 +23,7 @@ protected:
       dataList.push_back(new TestDataPair { "1,2",3});
       dataList.push_back(new TestDataPair { "1,2,3",6});
   }
-  // After Each Test Case
-void TearDown(){
-    delete TestDataPair    
-    
-}
+ 
 
 TEST_F(StringCalculatorDataDrivenFixture,DataDrivenTestCase){
      for (TestDataPair* dataPairPtr : dataList) {
