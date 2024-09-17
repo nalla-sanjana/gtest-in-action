@@ -16,7 +16,7 @@ TEST(StringCalculatorTestSuite,add_emptyInputString_ZeroIsExpected){
 
 
 
-TEST(StringCalculatorTestSuite,add_Negat_ZeroIsExpected){
+TEST(StringCalculatorTestSuite,add_Negative_ZeroIsExpected){
   //Arrange
   string input= -1;
   int expectedValue=0;
