@@ -56,6 +56,15 @@ TEST(StringCalculatorTestSuite,add_NegativeInput_Invalid_argumentIsExpected){
   ASSERT_THROW(Add(input), invalid_argument);
  }
 
+TEST(StringCalculatorTestSuite,add_when_passed_numbers_over_1000_Ignorethem){
+  //Arrange
+  string input= "1,1001,3";
+  int expectedValue=4;
+  //Act
+  int actualValue=Add(input);
+  //Assert
+  ASSERT_EQ(actualValue,expectedValue);
+
 
 
 
