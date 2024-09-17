@@ -23,7 +23,7 @@ TEST(StringCalculatorTestSuite,add_Negative_ZeroIsExpected){
   //Act
   int actualValue=Add(input);
   //Assert
-  ASSERT_GT(actualValue,expectedValue);
+  ASSERT_GT(expectedValue, actualValue);
   
   
 }
