@@ -21,6 +21,7 @@ TEST(StringCalculatorTestSuite,add_ZeroInputString_ZeroIsExpected){
   int actualValue=Add(input);
   //Assert
   ASSERT_EQ(actualValue,expectedValue);
+}
 
 
 
