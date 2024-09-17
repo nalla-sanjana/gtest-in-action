@@ -39,11 +39,6 @@ TEST(StringCalculatorDataDrivenTestSuite,DataDrivenTestCase){
   TestDataPair pair_four { "1,2",3};
   TestDataPair pair_five { "1,2,3",6};
 
-  dataList.push_back(pair_one);
-  dataList.push_back(pair_two);
-  dataList.push_back(pair_three);
-  dataList.push_back(pair_four);
-  dataList.push_back(pair_five);
   
   //Iterate using a range-based for-loop
     for (TestDataPair dataPair : dataList) {
