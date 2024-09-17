@@ -64,6 +64,7 @@ TEST(StringCalculatorTestSuite,add_when_passed_numbers_over_1000_Ignorethem){
   int actualValue=Add(input);
   //Assert
   ASSERT_EQ(actualValue,expectedValue);
+}
 
 
 
