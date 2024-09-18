@@ -9,6 +9,8 @@ protected:
 };
 
 class StringCalculatorParameterFixture:public StringCalculatorFixture,public testing::WithParamInterface<tuple<string,int>>{
+   input= std::get<0>(GetParam());
+      expectedValue= std::get<1>(GetParam());
 };
 
 //Parameter Values
@@ -24,8 +26,8 @@ INSTANTIATE_TEST_SUITE_P(ValidStringCalculatorInputs,StringCalculatorParameterFi
 
 //TEST_P(Fixture,testcase)
 TEST_P(StringCalculatorParameterFixture,ParameterizedTest){
-      input= std::get<0>(GetParam());
-      expectedValue= std::get<1>(GetParam());
+     // input= std::get<0>(GetParam());
+    //  expectedValue= std::get<1>(GetParam());
       actualValue=Add(input);
       ASSERT_EQ(actualValue,expectedValue);
 }
