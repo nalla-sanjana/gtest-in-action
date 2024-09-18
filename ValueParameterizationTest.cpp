@@ -31,7 +31,7 @@ void fakeDisplayFunction(int result){
 
 //TEST_P(Fixture,testcase)
 TEST_P(StringCalculatorParameterFixture,ParameterizedTest){
-   Add(input);
+   //Add(input);
      // actualValue=Add(input);
      // ASSERT_EQ(actualValue,expectedValue);
    Add(input,&fakeDisplayFunction);
