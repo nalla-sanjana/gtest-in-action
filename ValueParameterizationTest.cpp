@@ -25,10 +25,14 @@ INSTANTIATE_TEST_SUITE_P(ValidStringCalculatorInputs,StringCalculatorParameterFi
   make_tuple("1,2,3", 6)
   
 ));
+void fakeDisplayFunction(int result){
+    
+}
 
 //TEST_P(Fixture,testcase)
 TEST_P(StringCalculatorParameterFixture,ParameterizedTest){
    Add(input);
      // actualValue=Add(input);
      // ASSERT_EQ(actualValue,expectedValue);
+   Add(input,&fakeDisplayFunction);
 }
