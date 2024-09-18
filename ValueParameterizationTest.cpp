@@ -12,6 +12,7 @@ class StringCalculatorParameterFixture:public StringCalculatorFixture,public tes
 };
 
 //Parameter Values
+//INSTANTIATE_TEST_SUITE_P(name, fixture, values)
 INSTANTIATE_TEST_SUITE_P(ValidStringCalculatorInputs,StringCalculatorParameterFixture,testing::Values(
   make_tuple("", 0),
   make_tuple("0", 0),
@@ -21,6 +22,7 @@ INSTANTIATE_TEST_SUITE_P(ValidStringCalculatorInputs,StringCalculatorParameterFi
   
 ));
 
+//TEST_P(Fixture,testcase)
 TEST_P(StringCalculatorParameterFixture,ParameterizedTest){
       input= std::get<0>(GetParam());
       expectedValue= std::get<1>(GetParam());
