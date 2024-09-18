@@ -9,8 +9,11 @@ protected:
 };
 
 class StringCalculatorParameterFixture:public StringCalculatorFixture,public testing::WithParamInterface<tuple<string,int>>{
-   input= std::get<0>(GetParam());
-      expectedValue= std::get<1>(GetParam());
+    void SetUp() override {
+        // Initialize input and expectedValue from GetParam
+        input = std::get<0>(GetParam());
+        expectedValue = std::get<1>(GetParam());
+    }
 };
 
 //Parameter Values
