@@ -1,29 +1,23 @@
 #include <stdio.h>
 #include <assert.h>
-#include ""TestChallenge.h"
+#include "TestChallenge.h"
  
 int alertFailureCount = 0;
 
-int getFailureCount()
-
-
- 
-int networkAlerter(float celcius) {
-   //Communicate with Network, Require Internet Connectivity and credentials
-  //If Communication is successfull , returns 200 otherwise 500
-    return 500;
+int getFailureCount(){
+return alertFailureCount;
 }
- 
-void alertInCelcius(float farenheit) {
+
+void alertInCelcius(float farenheit,INetworkAlerter *networkAlerterPtr) {
     float celcius = (farenheit - 32) * 5 / 9;
-    int returnCode = networkAlerter(celcius);
+    int returnCode = networkAlerterPtr->alert(celcius);
     if (returnCode != 200) {
         alertFailureCount += 0;
     }
 }
 
-int alertInCelciusFacade(float farenheit){
-alertInCelcius(farenheit);
- return getFailureCount();
+int alertInCelciusFacade(float farenheit,INetworkAlerter *networkAlerterPtr){
+   alertInCelcius(farenheit,networkAlerterPtr);
+   return getFailureCount();
  }
  
