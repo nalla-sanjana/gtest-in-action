@@ -43,9 +43,9 @@ vector<int> get_numbers(const string &input) {
 	return numbers;
 }
 
-void Add(const string &input) {
+void  Add(const string &input,void(*displayPtr)(int)) {
 	if (input.empty())
-		cout<<0;
+		(*displayPtr)(0);
 
 	vector<int> numbers = get_numbers(input);
 
