@@ -12,7 +12,6 @@ class StringCalculatorParameterFixture:public StringCalculatorFixture,public tes
 };
 
 //Parameter Values
-//Parameter Values
 INSTANTIATE_TEST_SUITE_P(ValidStringCalculatorInputs,StringCalculatorParameterFixture,testing::Values(
   make_tuple("", 0),
   make_tuple("0", 0),
